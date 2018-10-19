@@ -1,4 +1,4 @@
-# _My Pet Webpage_
+# _Second week project_
 
 #### _Simple Webpage for Epicodus, 10.19.2018_
 
