@@ -19,18 +19,24 @@
       <div class="container-fluid">
           <h5>JavaScript</h5>
             <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
-              It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional program</p>
+              It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional program. To find out more about JavaScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript">click here</a>.</p>
+              <br>
           <h5>C#</h5>
             <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework.
-              You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more.</p>
+              You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. To find out more about C# <a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework">click here</a>.</p>
+              <br>
           <h5>Python</h5>
             <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
-              Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.</p>
+              Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.
+              To find out more about Python <a href="https://www.python.org/doc/essays/blurb/">click here</a>.</p>
+              <br>
           <h5>Ruby</h5>
             <p>Ruby is a dynamic, interpreted, reflective, object-oriented, general-purpose programming language.
-              It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.</p>
+              It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan. To find out more about Ruby <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)">click here</a>.</p>
+              <br>
           <h5>PHP</h5>
-            <p> Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994.</p>
+            <p> Hypertext Preprocessor (or simply PHP) is a server-side scripting language designed for Web development, but also used as a general-purpose programming language. It was originally created by Rasmus Lerdorf in 1994.
+            To find out more about PHP <a href="https://en.wikipedia.org/wiki/PHP">click here</a>.</p>
         </div>
         <br>
         <img src="img/pl2.png" alt="coding">
@@ -42,45 +48,57 @@
             <br>
             <div class="form-group">
                 <label for="input1">What's your name?</label>
-                <input id="input1" class="form-control" type="text">
+                <input id="name" class="form-control" type="text">
             </div>
               <p><b>Would you like to learn how to make mobile applications?</b></p>
-                <form action="/action_page.php" method="get">
+                <form id="q1"action="/action_page.php" method="get">
                   <input type="checkbox" name="answer1" value="answer1"> Yes<br>
                   <input type="checkbox" name="answer2" value="answer2"> No
                 </form>
                 <br>
                  <p><b>What kind of job would you like to have?</b></p>
-                  <form action="/action_page.php" method="get">
+                  <form id="q2" action="/action_page.php" method="get">
                     <input type="checkbox" name="answer1" value="answer1"> Web developer<br>
                     <input type="checkbox" name="answer2" value="answer2"> Video game programmer<br>
                     <input type="checkbox" name="answer3" value="answer3"> IT security
                   </form>
                   <br>
                   <p><b>What's your favorite computer brand?</b></p>
-                    <form action="/action_page.php" method="get">
+                    <form id="q3" action="/action_page.php" method="get">
                       <input type="checkbox" name="answer1" value="answer1"> Apple<br>
                       <input type="checkbox" name="answer2" value="answer2"> Lenovo<br>
                       <input type="checkbox" name="answer3" value="answer3"> Dell
                     </form>
                     <br>
                     <p><b>What got you intrested in programming?</b></p>
-                      <form action="/action_page.php" method="get">
+                      <form id="q4" action="/action_page.php" method="get">
                         <input type="checkbox" name="answer1" value="answer1"> I want to make more money<br>
                         <input type="checkbox" name="answer2" value="answer2"> I like problem solving<br>
                         <input type="checkbox" name="answer3" value="answer3"> I like building something from scratch
                       </form>
                       <br>
                     <p><b>What would you like to create when you are done with coding bootcamp</b></p>
-                        <form action="/action_page.php" method="get">
+                        <form id="q5" action="/action_page.php" method="get">
                           <input type="checkbox" name="answer1" value="answer1"> Video games<br>
                           <input type="checkbox" name="answer2" value="answer2"> Web sites<br>
                           <input type="checkbox" name="answer3" value="answer3"> New programming language
                         </form>
                         <br>
+                  <div class="submit">
                     <input type="submit" value="Submit">
                     <br>
                     <br>
+                  </div>
+                  <div id="output1">
+                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                  </div>
+                  <div id="output2">
+                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                  </div>
+                  <div id="output3">
+                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                  </div>
+                <br>
        </div>
   </body>
 </html>
