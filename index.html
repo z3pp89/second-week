@@ -46,43 +46,54 @@
             <br>
             <p>Complete this quick survey to find out what's the best track for you</p>
             <br>
+          <div id="quiz">
             <div class="form-group">
                 <label for="input1">What's your name?</label>
                 <input id="name" class="form-control" type="text">
             </div>
               <p><b>Would you like to learn how to make mobile applications?</b></p>
-                <form id="q1"action="/action_page.php" method="get">
-                  <input type="checkbox" name="answer1" value="answer1"> Yes<br>
-                  <input type="checkbox" name="answer2" value="answer2"> No
-                </form>
+                <div class="radio">
+                  <form action="/action_page.php" method="get">
+                    <input id="a1" type="radio" name="answer1" value="answer1"> Yes<br>
+                    <input id="a2" type="radio" name="answer2" value="answer2"> No
+                  </form>
+                </div>
                 <br>
                  <p><b>What kind of job would you like to have?</b></p>
-                  <form id="q2" action="/action_page.php" method="get">
-                    <input type="checkbox" name="answer1" value="answer1"> Web developer<br>
-                    <input type="checkbox" name="answer2" value="answer2"> Video game programmer<br>
-                    <input type="checkbox" name="answer3" value="answer3"> IT security
-                  </form>
+                  <div class="radio">
+                    <form action="/action_page.php" method="get">
+                      <input id="b1" type="radio" name="answer1" value="answer1"> Web developer<br>
+                      <input id="b2" type="radio" name="answer2" value="answer2"> Video game programmer<br>
+                      <input id="b3"  type="radio" name="answer3" value="answer3"> IT security
+                    </form>
+                  </div>
                   <br>
                   <p><b>What's your favorite computer brand?</b></p>
-                    <form id="q3" action="/action_page.php" method="get">
-                      <input type="checkbox" name="answer1" value="answer1"> Apple<br>
-                      <input type="checkbox" name="answer2" value="answer2"> Lenovo<br>
-                      <input type="checkbox" name="answer3" value="answer3"> Dell
-                    </form>
+                    <div class="radio">
+                      <form action="/action_page.php" method="get">
+                        <input id="c1" type="radio" name="answer1" value="answer1"> Apple<br>
+                        <input  id="c2" type="radio" name="answer2" value="answer2"> Lenovo<br>
+                        <input  id="c3" type="radio" name="answer3" value="answer3"> Dell
+                      </form>
+                    </div>
                     <br>
                     <p><b>What got you intrested in programming?</b></p>
-                      <form id="q4" action="/action_page.php" method="get">
-                        <input type="checkbox" name="answer1" value="answer1"> I want to make more money<br>
-                        <input type="checkbox" name="answer2" value="answer2"> I like problem solving<br>
-                        <input type="checkbox" name="answer3" value="answer3"> I like building something from scratch
-                      </form>
+                      <div class="radio">
+                        <form action="/action_page.php" method="get">
+                          <input id="d1" type="radio" name="answer1" value="answer1"> I want to make more money<br>
+                          <input id="d2" type="radio" name="answer2" value="answer2"> I like problem solving<br>
+                          <input id="d3" type="radio" name="answer3" value="answer3"> I like building something from scratch
+                        </form>
+                      </div>
                       <br>
                     <p><b>What would you like to create when you are done with coding bootcamp</b></p>
-                        <form id="q5" action="/action_page.php" method="get">
-                          <input type="checkbox" name="answer1" value="answer1"> Video games<br>
-                          <input type="checkbox" name="answer2" value="answer2"> Web sites<br>
-                          <input type="checkbox" name="answer3" value="answer3"> New programming language
+                      <div class="radio">
+                        <form action="/action_page.php" method="get">
+                          <input id="e1" type="radio" name="answer1" value="answer1"> Video games<br>
+                          <input id="e2" type="radio" name="answer2" value="answer2"> Web sites<br>
+                          <input id="e3" type="radio" name="answer3" value="answer3"> New programming language
                         </form>
+                      </div>
                         <br>
                   <div class="submit">
                     <input type="submit" value="Submit">
@@ -90,15 +101,16 @@
                     <br>
                   </div>
                   <div id="output1">
-                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
                   </div>
                   <div id="output2">
-                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
                   </div>
                   <div id="output3">
-                    <p> Hello <span id ="outname"></span> best track for you is <span id = "output1"></span></p>
+                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
                   </div>
                 <br>
+            </div>
        </div>
   </body>
 </html>
