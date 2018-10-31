@@ -47,70 +47,79 @@
             <p>Complete this quick survey to find out what's the best track for you</p>
             <br>
           <div id="quiz">
-            <div class="form-group">
-                <label for="input1">What's your name?</label>
-                <input id="name" class="form-control" type="text">
+            <form id="myForm">
+              <div class="form-row">
+                  <label for="name">
+                    What's your name?
+                  </label>
+                  <input type="text" class="form-control" id="name1" placeholder="First Name" required>
+              </div>
+            <br>
+            <div class="radio">
+                <li><b>Would you like to learn how to make mobile applications?</b></li>
+                <label>
+                      <input  type="radio" name="question1" value="q1a1" checked>
+                      Yes<br>
+                      <input type="radio" name="question1" value="q1a2">
+                      No
+                </label>
             </div>
-              <p><b>Would you like to learn how to make mobile applications?</b></p>
-                <div class="radio">
-                  <form action="/action_page.php" method="get">
-                    <input id="a1" type="radio" name="answer1" value="answer1"> Yes<br>
-                    <input id="a2" type="radio" name="answer2" value="answer2"> No
-                  </form>
-                </div>
-                <br>
-                 <p><b>What kind of job would you like to have?</b></p>
-                  <div class="radio">
-                    <form action="/action_page.php" method="get">
-                      <input id="b1" type="radio" name="answer1" value="answer1"> Web developer<br>
-                      <input id="b2" type="radio" name="answer2" value="answer2"> Video game programmer<br>
-                      <input id="b3"  type="radio" name="answer3" value="answer3"> IT security
-                    </form>
-                  </div>
                   <br>
-                  <p><b>What's your favorite computer brand?</b></p>
-                    <div class="radio">
-                      <form action="/action_page.php" method="get">
-                        <input id="c1" type="radio" name="answer1" value="answer1"> Apple<br>
-                        <input  id="c2" type="radio" name="answer2" value="answer2"> Lenovo<br>
-                        <input  id="c3" type="radio" name="answer3" value="answer3"> Dell
-                      </form>
-                    </div>
+            <div class="radio">
+                   <li><b>What kind of job would you like to have?</b></li>
+                    <label>
+                        <input type="radio" name="question2" value="q2a1" checked>
+                        Web developer<br>
+                        <input type="radio" name="question2" value="q2a2">
+                        Video game programmer<br>
+                        <input type="radio" name="question2" value="q2a3">
+                        IT security
+                    </label>
+              </div>
                     <br>
-                    <p><b>What got you intrested in programming?</b></p>
-                      <div class="radio">
-                        <form action="/action_page.php" method="get">
-                          <input id="d1" type="radio" name="answer1" value="answer1"> I want to make more money<br>
-                          <input id="d2" type="radio" name="answer2" value="answer2"> I like problem solving<br>
-                          <input id="d3" type="radio" name="answer3" value="answer3"> I like building something from scratch
-                        </form>
-                      </div>
+              <div class="radio">
+                    <li><b>What's your favorite computer brand?</b></li>
+                      <label>
+                          <input type="radio" name="question3" value="q3a1" checked>
+                          Apple<br>
+                          <input type="radio" name="question3" value="q3a2">
+                          Lenovo<br>
+                          <input type="radio" name="question3" value="q3a3">
+                          Dell
+                      </label>
+                </div>
                       <br>
-                    <p><b>What would you like to create when you are done with coding bootcamp</b></p>
-                      <div class="radio">
-                        <form action="/action_page.php" method="get">
-                          <input id="e1" type="radio" name="answer1" value="answer1"> Video games<br>
-                          <input id="e2" type="radio" name="answer2" value="answer2"> Web sites<br>
-                          <input id="e3" type="radio" name="answer3" value="answer3"> New programming language
-                        </form>
-                      </div>
+                <div class="radio">
+                    <li><b>What got you intrested in programming?</b></li>
+                      <label>
+                            <input type="radio" name="question4" value="q4a1" checked>
+                            I want to make more money<br>
+                            <input type="radio" name="question4" value="q4a2">
+                            I like problem solving<br>
+                            <input type="radio" name="question4" value="q4a3">
+                            I like building something from scratchS
+                      </label>
+                </div>
                         <br>
-                  <div class="submit">
-                    <input type="submit" value="Submit">
+                <div class="radio">
+                    <li><b>What would you like to create when you are done with coding bootcamp</b></li>
+                      <label>
+                            <input type="radio" name="question5" value="q5a1" checked>
+                             Video games<br>
+                            <input type="radio" name="question5" value="q5a2">
+                            Web sites<br>
+                            <input type="radio" name="question5" value="q5a3">
+                            New programming language
+                      </label>
+                </div>
                     <br>
-                    <br>
                   </div>
-                  <div id="output1">
-                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
-                  </div>
-                  <div id="output2">
-                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
-                  </div>
-                  <div id="output3">
-                    <p> Hello <span id ="name"></span> best track for you is <span id = "output1"></span></p>
-                  </div>
-                <br>
-            </div>
-       </div>
+                    <div id="output1"></div>
+                    <div class="btn">
+                      <button type="submit" name="batn">Submit</button>
+                    </div>
+                  <br>
+        </form>
+      </div>
   </body>
 </html>

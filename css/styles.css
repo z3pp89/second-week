@@ -36,8 +36,9 @@ img {
   margin-right: auto;
   display: block;
 }
-.submit {
+.btn {
 color: black;
+margin-left: 50px;
 }
 p {
   margin-left: 10px;
@@ -48,10 +49,5 @@ p {
 }
 #output1 {
   display: none;
-}
-#output2 {
-  display: none;
-}
-#output3 {
-  display: none;
-}
+  margin-left: 50px;
+  color: red;
